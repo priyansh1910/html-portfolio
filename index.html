@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY portfolio</title>
-</head>
-<body>
-    <h1>Priyansh's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <hr/>
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/movie.png" height="200"/>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            VANTA.NET({
+                el: "#wrapper",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x8919a0,
+                backgroundColor: 0x0,
+                maxDistance: 22.00
+            })
+        });
+        </script>
+        <title>priyansh0666</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-family: 'Oswald', sans-serif;
+            }
+            #wrapper {
+                min-height: 100%;
+            }
+            .heading{
+                font-family: 'Kalam', cursive;
+            }
+            .bton{
+                font-weight:600;
+                font-size: 16px;
+                background: white;
+                color: black;
+                border:transparent;
+                padding: 8px 25px;
+                transition: transform 0.5s;
 
+            }
+            .bton:hover{
+                font-weight:600;
+                cursor:pointer;
+                background:transparent;
+                color:white;
+                text-decoration:none;
+                transform: translateY(-8px);
+            }
+        </style>
+        <!--[if lte IE 6]>
+        <style type="text/css">
+            #container {
+                height: 100%;
+            }
+        </style>
+        <![endif]-->
+    </head>
 
-     <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-     <img src="./assets/images/birthday invite.png" height="200"/>
-
-     <hr/>
-
-     <a href="./public/about.html">About Me</a>
-     <a href="./public/contact.html">Contact Me</a>
-
-
-</body>
+    <body style="background-color: black; align-items: center; margin-top:-30px;">
+        <div style="color: white; text-align:center;" id="wrapper">
+            <h1 style="font-size: 44px; font-weight:700; padding-top: 120px;">FILE COMPRESSION</h1><h1>Priyansh e22cseu0666</h1></h1>
+            <p class="heading" style="margin-top:-10px;" >using</p>
+            <h1 style="color:#8919a0; font-weight:700; font-size: 64px; margin-top:-10px;"><i>HUFFMAN CODING</i></h1>
+            <a href="compress.html"><button class="bton" >COMPRESS</button></a>&#160;&#160;&#160;&#160;&#160;
+            <a href="decompress.html"><button class="bton">DECOMPRESS</button></a>
+        </div>
+    </body>
 </html>
-
